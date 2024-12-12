@@ -2,7 +2,7 @@
 # Conditional build:
 %bcond_with	tests		# build with tests
 
-%define		kdeappsver	24.08.3
+%define		kdeappsver	24.12.0
 %define		kframever	5.103.0
 %define		qtver		5.15.2
 %define		kaname		kdev-python
@@ -10,12 +10,12 @@
 Summary:	KDE Integrated Development Environment - python
 Summary(pl.UTF-8):	Zintegrowane środowisko programisty dla KDE - python
 Name:		ka6-%{kaname}
-Version:	24.08.3
+Version:	24.12.0
 Release:	1
 License:	GPL
 Group:		X11/Development/Tools
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	2b6ef2b55fb021976cfc40ded227ffe4
+# Source0-md5:	c6fa30c124491cb8d0654b1d7c7df05b
 URL:		http://www.kdevelop.org/
 BuildRequires:	Qt6Core-devel >= 5.15.2
 BuildRequires:	Qt6Gui-devel >= 5.15.2
@@ -85,8 +85,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/libkdevpythoncompletion.so
 %attr(755,root,root) %{_libdir}/libkdevpythonduchain.so
 %attr(755,root,root) %{_libdir}/libkdevpythonparser.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kdevplatform/60/kdevpdb.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kdevplatform/60/kdevpythonlanguagesupport.so
+%attr(755,root,root) %{_libdir}/qt6/plugins/kdevplatform/6?/kdevpdb.so
+%attr(755,root,root) %{_libdir}/qt6/plugins/kdevplatform/6?/kdevpythonlanguagesupport.so
 %{_datadir}/kdevappwizard/templates/django_project.tar.bz2
 %{_datadir}/kdevappwizard/templates/qtdesigner_app.tar.bz2
 %{_datadir}/kdevappwizard/templates/simple_pythonapp.tar.bz2

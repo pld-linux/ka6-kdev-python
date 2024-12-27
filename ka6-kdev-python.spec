@@ -19,7 +19,10 @@ Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kan
 URL:		http://www.kdevelop.org/
 BuildRequires:	Qt6Core-devel >= 5.15.2
 BuildRequires:	Qt6Gui-devel >= 5.15.2
+BuildRequires:	Qt6Qml-devel
+BuildRequires:	Qt6Qt5Compat-devel >= 6.0.0
 BuildRequires:	Qt6Test-devel
+BuildRequires:	Qt6WebEngine-devel >= 6.5.0
 BuildRequires:	Qt6Widgets-devel >= 5.15.2
 BuildRequires:	gettext-devel
 BuildRequires:	ka6-kdevelop-devel >= %{kdeappsver}

@@ -51,7 +51,7 @@ BuildRequires:	python3-devel >= 3.10
 BuildRequires:	rpmbuild(macros) >= 1.600
 Requires:	ka6-kdevelop
 Obsoletes:	ka5-%{kaname} < %{version}
-ExcludeArch:	x32 i686
+ExcludeArch:	x32 %{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description

@@ -2,7 +2,7 @@
 # Conditional build:
 %bcond_with	tests		# build with tests
 
-%define		kdeappsver	25.04.1
+%define		kdeappsver	25.04.2
 %define		kframever	5.103.0
 %define		qtver		5.15.2
 %define		kaname		kdev-python
@@ -10,12 +10,12 @@
 Summary:	KDE Integrated Development Environment - python
 Summary(pl.UTF-8):	Zintegrowane środowisko programisty dla KDE - python
 Name:		ka6-%{kaname}
-Version:	25.04.1
+Version:	25.04.2
 Release:	1
 License:	GPL
 Group:		X11/Development/Tools
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	59c7fcd938520f057dd4ce525f9a00b0
+# Source0-md5:	590212ec2ba3b5b4d2c403d1ee6dc7ae
 URL:		http://www.kdevelop.org/
 BuildRequires:	Qt6Core-devel >= 5.15.2
 BuildRequires:	Qt6Gui-devel >= 5.15.2

@@ -58,6 +58,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 KDE Integrated Development Environment - python.
 
+%description -l pl.UTF-8
+Zintegrowane środowisko programistyczne (IDE) KDE dla języka Python.
+
 %prep
 %setup -q -n %{kaname}-%{version}
 
